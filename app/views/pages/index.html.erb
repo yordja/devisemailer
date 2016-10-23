@@ -139,6 +139,7 @@ ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
  <div class="well">
   <h4>Recent Posted</h4>
   <% @articles.each do |a| %>
+  Create by : <%= a.user.username %>  <br />
    <strong><%= link_to a.title, a %></strong>
    <br>
    <p>
